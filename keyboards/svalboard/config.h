@@ -31,7 +31,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS  10
 #define MATRIX_COLS  6
 #define PFET_ROWS
-#define FORCE_NKRO
+// #define FORCE_NKRO
 #define EE_HANDS
 //#define DEBUG_MATRIX_SCAN_RATE
 // Data size is 5 + (16 * 3), to include layer colors in HSV struct.
