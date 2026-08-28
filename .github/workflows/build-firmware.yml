@@ -18,7 +18,7 @@ jobs:
     # Find the digest published closest to (but before) 2025-11-01 here:
     #   https://github.com/orgs/qmk/packages/container/qmk_cli/versions?filters[version_type]=untagged
     # then replace the line below with:
-    #   container: ghcr.io/qmk/qmk_cli@sha256:2dc05fc9f32efebd6b05c2b8676ee548358bc7e151e9dbf4dac6b6eed4513b07
+    #   container: ghcr.io/qmk/qmk_cli@sha256:<digest>
     container: ghcr.io/qmk/qmk_cli@sha256:2dc05fc9f32efebd6b05c2b8676ee548358bc7e151e9dbf4dac6b6eed4513b07
     steps:
     - name: Checkout code - Non PR
@@ -46,7 +46,7 @@ jobs:
       run: |
         git config --global --add safe.directory '*'
         # Ensure all requirements got installed and qmk is sure it is set up
-        /usr/bin/python3 -m pip install --break-system-packages -r /__w/vial-qmk/vial-qmk/requirements.txt
+        /usr/bin/python3.13 -m pip install --break-system-packages -r /__w/vial-qmk/vial-qmk/requirements.txt
         qmk setup -y
         # Run make
         make ${{ inputs.keyboard }}/${{ inputs.side }}:${{ inputs.keymap }}
