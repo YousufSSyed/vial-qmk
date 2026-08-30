@@ -30,3 +30,5 @@ NO_USB_STARTUP_CHECK = yes
 ifeq ($(strip $(MH_AUTO_BUTTONS)), yes)
   OPT_DEFS += -DMH_AUTO_BUTTONS
 endif
+
+KEY_OVERRIDE_ENABLE = yes
