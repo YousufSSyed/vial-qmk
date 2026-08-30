@@ -89,13 +89,14 @@ const key_override_t shift_scln_override = {
     .trigger_mods       = MOD_MASK_GUI,
     .trigger            = KC_J,
     .replacement        = KC_LEFT,
-    .layers             = 0,                 // active on all layers
+    .layers             = ~0,
     .negative_mod_mask  = 0,
     .suppressed_mods    = MOD_MASK_GUI,
     .options            = ko_options_default,
-    .enabled            = NULL,                // no run-time enable/disable check
+    .enabled            = NULL,
 };
 
 const key_override_t **key_overrides = (const key_override_t *[]){
     &shift_scln_override,
+    NULL,
 };
