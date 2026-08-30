@@ -90,10 +90,10 @@ const key_override_t shift_scln_override = {
     .trigger            = KC_J,
     .replacement        = KC_LEFT,
     .layers             = 0,                 // active on all layers
-    .negative_mod_mask  = NULL,
+    .negative_mod_mask  = 0,
     .suppressed_mods    = MOD_MASK_GUI,
     .options            = ko_options_default,
-    .enabled            = NULL,                // no run-time enable/disable check
+    .enabled            = true,                // no run-time enable/disable check
 };
 
 const key_override_t **key_overrides = (const key_override_t *[]){
