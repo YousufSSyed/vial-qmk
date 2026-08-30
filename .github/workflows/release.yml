@@ -12,7 +12,7 @@ permissions: write-all
 
 jobs:
   build_vial:
-    uses: ./.github/workflows/build-firbackslashmware.yml
+    uses: ./.github/workflows/build-firmware.yml
     with:
       keyboard: ${{ matrix.keyboard }}
       keymap: ${{ matrix.keymap }}
