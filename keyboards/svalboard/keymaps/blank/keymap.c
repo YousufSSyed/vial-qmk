@@ -93,7 +93,7 @@ const key_override_t shift_scln_override = {
     .negative_mod_mask  = NULL,
     .suppressed_mods    = MOD_MASK_GUI,
     .options            = ko_options_default,
-    .enabled            = true,                // no run-time enable/disable check
+    .enabled            = NULL,                // no run-time enable/disable check
 };
 
 const key_override_t **key_overrides = (const key_override_t *[]){
