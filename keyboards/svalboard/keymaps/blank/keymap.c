@@ -85,3 +85,17 @@ enum layer {
 const uint16_t PROGMEM keymaps[DYNAMIC_KEYMAP_LAYER_COUNT][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
+const key_override_t shift_scln_override = {
+    .trigger_mods       = MOD_MASK_GUI,
+    .trigger            = KC_J,
+    .replacement        = KC_LEFT,
+    .layers             = 0,                 // active on all layers
+    .negative_mod_mask  = NULL,
+    .suppressed_mods    = MOD_MASK_GUI,
+    .options            = ko_options_default,
+    .enabled            = true,                // no run-time enable/disable check
+};
+
+const key_override_t **key_overrides = (const key_override_t *[]){
+    &shift_scln_override,
+};
