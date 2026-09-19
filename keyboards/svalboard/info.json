@@ -16,7 +16,7 @@
       "fauxclicky": false,
       "midi": false,
       "mousekey": true,
-      "nkro": true,
+      "nkro": false,
       "rgblight": true,
       "sleep_led": false,
       "unicode": false
