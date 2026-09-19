@@ -31,6 +31,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS  10
 #define MATRIX_COLS  6
 #define PFET_ROWS
+#define FORCE_NKRO
 #define EE_HANDS
 //#define DEBUG_MATRIX_SCAN_RATE
 // Data size is 5 + (16 * 3), to include layer colors in HSV struct.
@@ -80,7 +81,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // End result of enabling this: when you plug the keyboard to a finnicky USB
 // hub, KVM, or a machine that boots slowly (ECC RAM), the keyboard no longer
 // needs to be reset to come to life.
-// #define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_WATCHDOG_ENABLE
 
 // WS2812-fu here:
 //  pretty lights
