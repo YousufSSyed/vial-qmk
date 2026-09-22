@@ -80,7 +80,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // End result of enabling this: when you plug the keyboard to a finnicky USB
 // hub, KVM, or a machine that boots slowly (ECC RAM), the keyboard no longer
 // needs to be reset to come to life.
-// #define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_WATCHDOG_ENABLE
 
 // WS2812-fu here:
 //  pretty lights
